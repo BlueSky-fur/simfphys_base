@@ -14,7 +14,7 @@ hook.Add( "OnEntityCreated", "!!11!!!simfphysEntitySorter", function( ent )
 		if not IsValid( ent ) then return end
 
 		if isfunction( ent.IsNPC ) and ent:IsNPC() then
-			if ent:GetClass():lower() ~= "npc_fastzombie" then
+			if ent:GetClass():lower() ~= "npc_slowzombie" then
 				table.insert( NPCsStored, ent )
 			end
 		end
